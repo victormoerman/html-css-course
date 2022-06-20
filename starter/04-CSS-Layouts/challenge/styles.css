@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,16 +15,19 @@ body {
     margin-right: auto;
 }
 
+.column {
+    float: left;
+    width: 240px;
+}
+
 .col-1 {
-    float: left;
+    margin-right: 35px;
 }
-
 .col-2 {
-    float: left;
+    margin-right: 35px;
 }
-
 .col-3 {
-    float: left;
+    
 }
 
 h1, h2, h3, h4, p, a, li {
@@ -61,11 +65,22 @@ strong {
     font-size: 20px;
 }
 
+.price {
+    display: inline-block;
+}
+
 .free-shipping {
     font-size: 15px;
     font-weight: bold;
     color: #949494;
     margin-bottom: 10px;
+    float: right;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.description {
+    clear: both;
 }
 
 p {
@@ -96,7 +111,7 @@ a:hover {
 
 h3 {
     text-transform: uppercase;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-bottom: 20px;
 }
 
@@ -117,6 +132,7 @@ li:last-child {
 button {
     width: 100%;
     padding: 15px;
+    clear: left;
     border-top: 5px solid black;
     font-size: 20px;
     text-transform: uppercase;
